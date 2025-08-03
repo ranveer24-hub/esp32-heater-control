@@ -21,7 +21,7 @@ A simulated heater control system using ESP32 and DHT22 sensor that adjusts a he
 
 ## 🚀 How to Simulate in Wokwi
 
-1. Open the project: [Wokwi Simulation Link](#)
+1. Open the project: [https://wokwi.com/projects/438153436114816001](#)
 2. Click on the DHT22 component.
 3. Change the temperature value.
 4. View output on Serial Monitor and LED/Buzzer behavior.
@@ -47,7 +47,7 @@ A simulated heater control system using ESP32 and DHT22 sensor that adjusts a he
 ## 🛠 Tools Used
 
 - [ESP32 Dev Module](https://www.espressif.com/en/products/socs/esp32)
-- [Wokwi Simulator](https://wokwi.com/projects/438153436114816001)
+- [Wokwi Simulator](https://wokwi.com)
 
 
 ## 📬 Contact
