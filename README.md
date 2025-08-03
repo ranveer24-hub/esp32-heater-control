@@ -23,7 +23,12 @@ A simple simulation project that uses an **ESP32**, a **DHT22 temperature sensor
 
 ## ▶️ Wokwi Simulation Link
 
-👉 [Click here to open the simulation in Wokwi]((https://wokwi.com/projects/438153436114816001))
+👉 ## ▶️ Wokwi Simulation Link
+
+👉 [Click here to open the simulation in Wokwi](https://wokwi.com/projects/438153436114816001)
+
+If the link above doesn’t open directly on GitHub, try copying and pasting this into your browser:
+
 
 > Replace the link above with your actual Wokwi simulation URL.
 
