@@ -57,10 +57,12 @@ This allows easy understanding of the heater logic without real-world hardware.
 | File                     | Description                                   |
 |--------------------------|-----------------------------------------------|
 | `sketch.ino`             | Main Arduino code for the ESP32               |
-| `heater_contol_circuit.png` | Circuit diagram showing component connections |
+| `heater_contol_circuit.png`| Circuit diagram showing component connections |
 | `wokwi-lib-list.txt`     | Auto-generated Wokwi library list             |
 | `README.md`              | Project overview and documentation            |
 | `LICENSE`                | Project license (MIT or other, as applicable) |
+| `ESP32_Heater_Control.pdf`| PDF version of the project report            |
+
 
 ---
 
