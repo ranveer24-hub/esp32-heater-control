@@ -1,57 +1,76 @@
-# esp32-heater-control
-ESP32-based heater control system using DHT22 sensor. Automatically manages heating and safety states with visual feedback and temperature monitoring. Built for Wokwi simulation.
-# Heater Control System using ESP32 and DHT22
+# 🔥 ESP32 Heater Control System
 
-A simulated heater control system using ESP32 and DHT22 sensor that adjusts a heater (LED/Relay) based on temperature readings. Visual feedback is provided using a buzzer or indicator LED.
-
-## 🔧 Features
-
-- Turns heater ON below 25°C
-- Stabilizing state between 25°C – 30°C
-- Heater OFF once target temperature is reached
-- Overheat warning above 40°C
-- Serial monitor feedback for debugging
-
-## 📐 Circuit Overview
-
-- **DHT22 Sensor** → GPIO 4 (with 10kΩ pull-up resistor)
-- **Heater (LED/Relay)** → GPIO 5
-- **Buzzer/Indicator** → GPIO 2
-- **Power Supply** → 3.3V and GND
-
-## 🚀 How to Simulate in Wokwi
-
-1. Open the project: [https://wokwi.com/projects/438153436114816001](#)
-2. Click on the DHT22 component.
-3. Change the temperature value.
-4. View output on Serial Monitor and LED/Buzzer behavior.
-
-## 📂 File Contents
-
-| File                  | Description                          |
-|-----------------------|--------------------------------------|
-| `HeaterControl.ino`   | Arduino sketch for ESP32             |
-| `schematic.png`       | Circuit diagram                      |
-| `README.md`           | This file                            |
-| `Design_Document.pdf` | Project explanation and thresholds   |
-| `wokwi-diagram.json`  | (Optional) Wokwi project file        |
-
-## 💡 Bonus (Planned)
-
-- BLE Advertising of heating state
-- FreeRTOS-based task handling
-- Web dashboard for remote monitoring
+A simple simulation project that uses an **ESP32**, a **DHT22 temperature sensor**, and a **relay-controlled heater** (represented by an LED) to demonstrate heater control logic. This project is built and tested entirely in the **Wokwi simulator**.
 
 ---
 
-## 🛠 Tools Used
+## 🧠 Features
 
-- [ESP32 Dev Module](https://www.espressif.com/en/products/socs/esp32)
-- [Wokwi Simulator](https://wokwi.com)
+- Reads temperature and humidity using the **DHT22** sensor
+- Turns a **simulated heater (LED)** ON/OFF based on a set temperature threshold
+- Displays current sensor readings and system state over the **serial monitor**
+- Fully simulated – no hardware required
 
+---
 
-## 📬 Contact
+## 🖼️ Circuit Diagram
 
-Ranveer Singh Shekhawat  
-[shekhawatranveersingh828@gmail.com]
+![Circuit Diagram](./heater_contol_circuit.png)
+
+> ⚠️ **Note:** The **LED** in the diagram and simulation represents the **heater**.
+
+---
+
+## ▶️ Wokwi Simulation Link
+
+👉 [Click here to open the simulation in Wokwi]((https://wokwi.com/projects/438153436114816001))
+
+> Replace the link above with your actual Wokwi simulation URL.
+
+---
+
+## 📚 Libraries Used
+
+- **DHT sensor library** for interfacing with the DHT22  
+  📄 See: [`wokwi-lib-list.txt`](./wokwi-lib-list.txt)
+
+---
+
+## 💡 Heater Representation in Simulation
+
+Since **Wokwi** does not provide a dedicated heater component, an **LED** is used as a visual indicator:
+
+- **LED ON** → Heater is ON
+- **LED OFF** → Heater is OFF
+
+This allows easy understanding of the heater logic without real-world hardware.
+
+---
+
+## 📂 Project Files
+
+| File                     | Description                                   |
+|--------------------------|-----------------------------------------------|
+| `sketch.ino`             | Main Arduino code for the ESP32               |
+| `heater_contol_circuit.png` | Circuit diagram showing component connections |
+| `wokwi-lib-list.txt`     | Auto-generated Wokwi library list             |
+| `README.md`              | Project overview and documentation            |
+| `LICENSE`                | Project license (MIT or other, as applicable) |
+
+---
+
+## 🛠️ How to Use
+
+1. Open the Wokwi simulation using the link above.
+2. Click the green "Start Simulation" button.
+3. View temperature readings and heater status via the serial monitor.
+4. Change the temperature threshold in code (`sketch.ino`) as needed.
+
+---
+
+## 👤 Author
+
+**Ranveer Singh Shekhawat**  
+Made for learning and simulation purposes using ESP32 and Wokwi.
+
 
